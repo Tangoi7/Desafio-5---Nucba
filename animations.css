@@ -1,0 +1,7 @@
+.categoria-list:hover{
+    transform: scale(1.5);
+}
+
+.mas-popular:hover{
+    transform: scale(1.1);
+}
