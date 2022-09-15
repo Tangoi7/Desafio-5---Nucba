@@ -11,11 +11,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body{
     background-color: #252525;
-
 }
 
 /*NAVBAR*/
@@ -24,28 +26,16 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 70px;
+    align-items: center;
     width: 100%;
     height: 100px;
-}
-
-.n-icono{
-    width: 70px;
-    height: 70px;
-    margin: 30px 0px 0px 90px;
-}
-
-.list-nav{
-    
-    display: flex;
 }
 
 .list-nav ul{
     display: flex;
     list-style: none;
-    justify-content: space-between;
     gap: 80px;
-    margin-top: 60px;
-    margin-right: 60px;
 
 }
 
@@ -63,23 +53,41 @@ nav{
 
 .section1{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: #FC2933; */
     
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* background-color: #FFA400; */
+    gap: 30px;
+
 }
 
 .title-home{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-    margin-left: 150px;
+}
+
+.title-home-2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 h1{
     color: var(--text-white);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 60px;
-    margin-bottom: -30px;
+    font-size: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,69 +96,66 @@ h1{
 h2{
     color: var(--text-white);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
-    margin-left: -165px;
+    font-size: 60px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 40px;
+    align-items: flex-start;
 }
 
+
 #home-intro{
-    color: var(--text-gray);
+    color: var(--text-white);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
-    margin-left: -40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
-
   
 }
 
+
 .home-button{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-    display: flex;
+    background: rgb(255,161,0);
+    background: linear-gradient(90deg, rgba(255,161,0,1) 0%, rgba(255,0,0,1) 100%);
+    border-radius: 20px;
     width: 155px;
     height: 45px;
-    text-align: center;
-    justify-content: center;
-    border-radius: 15px 15px;
-    background: rgb(255,161,0);
-    background: linear-gradient(90deg, rgba(255,161,0,1) 0%, rgba(251,16,61,1) 100%);
-    padding: 5px;
-    margin-left: -260px;    
-    margin-top: 50px;
+    border: none;
+    cursor: pointer;
+    color: var(--text-white);
+    font-weight: 700;
+
 }
 
 .home-button a{
-    text-decoration: none;
     color: var(--text-white);
-    margin-top: 10px;
     font-size: 13px;
-    
 }
 
 .image-home{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 400px;
+    height: 250px;
+}
+
+.image-home img{
+    width: 1500px;
+    height: 500px;
 }
 
 #pizza1{
-    margin-top: 110px;
-    margin-right: 320px;
-    display: flex; 
-    
+    padding-top: 110px;
+    padding-right: 320px;
 }
 
 #pizza2{
     position: absolute;
     width: 400px;
     height: 360px;
-    margin-left: 30px;
-    margin-top: 5px;
+    padding-left: 30px;
+    padding-top: 5px;
     
 }
 
@@ -158,6 +163,10 @@ h2{
 
 .section2{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
     margin-top: 30px;
 }
 
@@ -165,22 +174,18 @@ h2{
     color: var(--text-white);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 22px;
-    font-weight:100;
-    margin-left: 155px;
-   
+    font-weight: 800;  
+    margin-top: 50px;
 }
+
 
 /*CARDS SECTION 2*/
 
 .home-reco{
     display: flex;
-    margin-top: 50px;
-    margin-left: -190px;
     justify-content: center;
-    gap: 50px;
     align-items: center;
-    
-    
+    gap: 50px;
 }
 
 .reco1{
@@ -188,32 +193,26 @@ h2{
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    gap: 25px;
-    border-radius: 15px 15px;
+    gap: 20px;
+    border-radius: 15px;
     background-color: #363636;
-    height: 80px;
-    width: 320px;
+    height: 90px;
+    width: 330px;
     
    
 }
 
-.reco1 img{
-    width: 55px;
-    height: 55px;
-    margin-left: 5px;
-    margin-top: 5px;
-}
 
 .reco1 h3{
     color: var(--text-white);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 100;
     
 }
 
 .reco1 p{
-    color:#0c0808;
+    color:#272525;
     font-size: 15px;
     margin-top: 2px;
     margin-bottom: 2px;
@@ -221,6 +220,7 @@ h2{
 
 .reco1 h5{
     font-size: 18px;
+    font-weight: 900;
     background: rgb(255,161,0);
     background: linear-gradient(90deg, rgba(255,161,0,1) 0%, rgba(251,16,61,1) 100%);
     text-transform: uppercase;
@@ -233,7 +233,8 @@ h2{
 .reco1 button{
     width: 90px;
     height: 35px;
-    border-radius: 15px 15px;
+    border-radius: 15px;
+    border: none;
     background: rgb(255,161,0);
     background: linear-gradient(90deg, rgba(255,161,0,1) 0%, rgba(251,16,61,1) 100%);
     color: var(--text-white);
