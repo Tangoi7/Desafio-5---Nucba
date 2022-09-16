@@ -5,3 +5,13 @@
 .mas-popular:hover{
     transform: scale(1.1);
 }
+
+.reco1:hover{
+    transform: scale(1.4);
+}
+
+button:hover{
+    color: black;
+    transition: all 0.2s ease-in;
+    box-shadow: inset 90px 0 0 0 red;
+}
